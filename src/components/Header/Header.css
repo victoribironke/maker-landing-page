@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 3rem 4rem;
+}
+
+header img {
+  width: 50%;
+  max-width: 225px;
+}
+
+@media (width >= 460px) {
+  header {
+    justify-content: flex-start;
+  }
+
+  header img {
+    width: 25%;
+  }
+}

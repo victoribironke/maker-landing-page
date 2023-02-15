@@ -1,0 +1,103 @@
+.hero {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.illustration {
+  max-width: 500px;
+  width: 108%;
+  margin-bottom: 4rem;
+}
+
+.left,
+.right {
+  display: none;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  padding: 0 3rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.love {
+  color: var(--cyan);
+}
+
+.hero p {
+  font-size: 1.1rem;
+  padding: 0 1.3rem;
+  color: var(--gray);
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.scroll {
+  margin: 2rem 0 7rem;
+}
+
+.bottom {
+  max-width: 650px;
+  width: 100%;
+}
+
+@media (width >= 550px) {
+  .illustration {
+    display: none;
+  }
+
+  .left,
+  .right {
+    position: absolute;
+    width: 230px;
+    display: flex;
+  }
+
+  .left {
+    left: -7rem;
+  }
+
+  .right {
+    right: -7rem;
+  }
+
+  .hero {
+    flex-direction: row;
+    margin-bottom: 8rem;
+    position: relative;
+  }
+
+  .hero p {
+    padding: 0;
+  }
+
+  .bottom {
+    width: 60%;
+    z-index: 2;
+    background-image: url("/bg-hero-squiggle.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .scroll {
+    margin-bottom: 0;
+  }
+}
+
+@media (width > 900px) {
+  .left {
+    left: -2.5rem;
+  }
+
+  .right {
+    right: -2.5rem;
+  }
+}

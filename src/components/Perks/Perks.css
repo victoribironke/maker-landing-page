@@ -1,0 +1,124 @@
+.perks {
+  padding: 0.5rem 0;
+  gap: 2rem;
+  margin-bottom: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+.perk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.img {
+  width: 120px;
+  aspect-ratio: 1/1;
+  padding: 1.3rem;
+  margin-bottom: 0.7rem;
+  border-radius: 50px;
+  background: var(--lighter-blue);
+}
+
+.img img {
+  width: 80%;
+}
+
+.perk h4 {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.perk h6 {
+  font-weight: lighter;
+  padding: 0 2rem;
+  text-align: center;
+  color: var(--gray);
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.exp {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (width >= 600px) {
+  .perks {
+    padding: 0;
+  }
+
+  .img {
+    transform: scale(0.85);
+    margin: 0;
+  }
+
+  .exp {
+    width: 50%;
+  }
+
+  .perk {
+    width: 100%;
+    gap: 2rem;
+    flex-direction: row;
+    padding-left: 3rem;
+  }
+
+  .perk:nth-child(even) {
+    margin-right: 5rem;
+  }
+
+  .perk h4,
+  .perk h6 {
+    padding: 0;
+    text-align: left;
+  }
+}
+
+@media (width >= 1000px) {
+  .perks {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+
+  .perk {
+    width: auto;
+    display: block;
+    padding: 0;
+    flex-direction: row;
+  }
+
+  .perk h4 {
+    font-size: 1.3rem;
+  }
+
+  .perk h6 {
+    font-size: 1rem;
+  }
+
+  .exp {
+    width: 100%;
+  }
+
+  .perk:nth-child(even) {
+    margin-right: 0;
+    margin-top: 2rem;
+  }
+
+  .img {
+    width: 130px;
+  }
+}
