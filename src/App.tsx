@@ -16,6 +16,12 @@ const App = () => {
       <Perks />
       <Pricing />
       <Footer />
+      <a
+        href="https://github.com/victoribironke/maker-landing-page"
+        target="_blank"
+      >
+        GITHUB
+      </a>
     </React.Fragment>
   );
 };
