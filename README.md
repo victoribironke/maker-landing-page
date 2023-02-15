@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Maker Landing Page](https://victoribironke.github.io/interactive-pricing-component/)
+- Live Site URL: [Maker Landing Page](https://maker-landing-page.netlify.app/)
 
 ## My process
 
